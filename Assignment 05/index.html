@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chessboard with Pieces</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border: 2px solid #333;
+  }
+  
+  td {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #333;
+    text-align: center;
+    font-size: 30px; /* Font size for pieces */
+  }
+  
+  /* Coloring the cells to resemble a chessboard pattern */
+  tr:nth-child(odd) td:nth-child(odd),
+  tr:nth-child(even) td:nth-child(even) {
+    background-color: #f0d9b5; /* light color */
+  }
+  
+  tr:nth-child(odd) td:nth-child(even),
+  tr:nth-child(even) td:nth-child(odd) {
+    background-color: #b58863; /* dark color */
+  }
+  
+  /* Styling the chess pieces */
+  .white {
+    color: white; /* White pieces */
+  }
+  
+  .black {
+    color: black; /* Black pieces */
+  }
+</style>
+</head>
+<body>
+  <table>
+    <tbody>
+      <!-- Creating the 8x8 chessboard with pieces -->
+      <tr>
+        <td class="piece black rook">♜</td>
+        <td class="piece black knight">♞</td>
+        <td class="piece black bishop">♝</td>
+        <td class="piece black queen">♛</td>
+        <td class="piece black king">♚</td>
+        <td class="piece black bishop">♝</td>
+        <td class="piece black knight">♞</td>
+        <td class="piece black rook">♜</td>
+      </tr>
+      <tr>
+        <td class="piece black pawn">♟</td>
+        <td class="piece black pawn">♟</td>
+        <td class="piece black pawn">♟</td>
+        <td class="piece black pawn">♟</td>
+        <td class="piece black pawn">♟</td>
+        <td class="piece black pawn">♟</td>
+        <td class="piece black pawn">♟</td>
+        <td class="piece black pawn">♟</td>
+      </tr>
+      <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <tr>
+        <td class="piece white pawn">♙</td>
+        <td class="piece white pawn">♙</td>
+        <td class="piece white pawn">♙</td>
+        <td class="piece white pawn">♙</td>
+        <td class="piece white pawn">♙</td>
+        <td class="piece white pawn">♙</td>
+        <td class="piece white pawn">♙</td>
+        <td class="piece white pawn">♙</td>
+      </tr>
+      <tr>
+        <td class="piece white rook">♖</td>
+        <td class="piece white knight">♘</td>
+        <td class="piece white bishop">♗</td>
+        <td class="piece white queen">♕</td>
+        <td class="piece white king">♔</td>
+        <td class="piece white bishop">♗</td>
+        <td class="piece white knight">♘</td>
+        <td class="piece white rook">♖</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
