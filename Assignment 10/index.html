@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment 01 - JK</title>
+    <script src="main.js"></script>
+    <style>
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript Assignment 01 by Junaid Khan</h1>
+    <p>This document contains all the answers for Chapter 01 and 02 for Javascript.</p>
+
+    <h2>CHAPTER 01 - ALERTS</h2>
+    <h3>Q2: Login Form</h3>
+
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <button type="button" onclick="validateLogin()">Login</button>
+    </form>
+
+    <h3>Question 3 - Alert with Line Break</h3>
+    <button type="button" onclick="showWelcomeMessage()">Click Me</button>
+
+    <h3>Question 4 - Two Alert Boxes</h3>
+    <button type="button" onclick="showTwoAlerts()">Click Me</button>
+
+    <h3>Question 5: Check console log</h3>
+
+    <h2>CHAPTER 02 - VARIABLES</h2>
+
+    <h3>Question 3 - Message Alert Box</h3>
+    <button type="button" onclick="messageAlert()">Click Me</button>
+
+    <h3>Question 4 - Student Bio Alert Boxes</h3>
+    <button type="button" onclick="messageAlert()">Click Me</button>
+
+    <h3>Question 5 - Pizza Alert Box with slicing and indexing</h3>
+    <button type="button" onclick="showPizza()">Show Pizza Alert</button>
+
+    <h3>Question 6 - Alert Box for Email Address</h3>
+    <button type="button" onclick="showEmail()">Show Email</button>
+
+    <h3>Question 7 - Alert Box for Book</h3>
+    <button type="button" onclick="showBook()">Show Book</button>
+
+    <h3>Question 8 - Display message using document.write in JS</h3>
+    <script>document.write("Yah! I can write HTML content through JavaScript.")</script>
+
+    <h3>Question 9 - Display special characters in document as well as Alert box</h3>
+    <script>document.write("▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬")</script><br />
+    <button type="button" onclick="specialChars()">Special Characters</button>
+
+    <h2>CHAPTER 03 - VARIABLES FOR NUMBERS</h2>
+
+    <h3>Question 3 - BirthYear Printing</h3>
+    <p>
+        <script>
+            var birthYear = 1998;
+            document.write("My birth year is " + birthYear);
+            document.write("<br/> Data Type of my declared variable is " + typeof birthYear);
+        </script>
+    </p>
+
+    <h3>Question 4 - Clothing Store</h3>
+    <p>
+        <script>
+            var visitorName = "Ahmed";
+            var productTitle = "Jeans";
+            var orderQty = 5;
+            document.write(visitorName + " ordered " + orderQty + " " + productTitle + " from Outfitters Store.")
+        </script>
+    </p>
+
+    <h2>CHAPTER 04 - Variables Names Legal & Illegal</h2>
+
+    <h3>Question 3 - Rules for naming JS variables</h3>
+    <p>
+        <script>
+            document.write("Variable names can only contain, numbers, $ and _. For example: $my_1stVariable<br>");
+            document.write("Variable must begin with a letter, $ or _. For example: $name, _name or name<br>");
+            document.write("Variable names are case sensitive<br>");
+            document.write("Variable names should not be JS keywords<br>");
+        </script>
+    </p>
+
+    <h2>CHAPTER 05 - MATHS EXPRESSIONS</h2>
+
+    <h3>Question 1 - Addition of 2 numbers</h3>
+    <p>
+        <script>
+            var var1 = 3;
+            var var2 = 5;
+            var result = var1 + var2;
+            document.write("sum of " + var1 + " and " + var2 + " is <b>" + result + "</b>");
+        </script>
+    </p>
+
+    <h3>Question 2 - Subtraction of 2 numbers</h3>
+    <p>
+        <script>
+            var var1 = 3;
+            var var2 = 5;
+            var result = var2 - var1;
+            document.write("subtraction " + var1 + " from " + var2 + " is <b>" + result + "</b>");
+        </script>
+    </p>
+
+    <h3>Question 2 - Multiplication of 2 numbers</h3>
+    <p>
+        <script>
+            var var1 = 3;
+            var var2 = 5;
+            var result = var1 * var2;
+            document.write("multiplication of " + var1 + " and " + var2 + " is <b>" + result + "</b>");
+        </script>
+    </p>
+
+    <h3>Question 2 - Division of 2 numbers</h3>
+    <p>
+        <script>
+            var var1 = 3;
+            var var2 = 5;
+            var result = var2 / var1;
+            document.write("Division of " + var2 + " by " + var1 + " is <b>" + result + "</b>");
+        </script>
+    </p>
+
+    <h3>Question 2 - Remainder (Modulus) of 2 numbers division</h3>
+    <p>
+        <script>
+            var var1 = 3;
+            var var2 = 5;
+            var result = var2 % var1;
+            document.write("Remainder of " + var2 + " divided by " + var1 + " is <b>" + result + "</b>");
+        </script>
+    </p>
+
+    <h3>Question 3 - Arithmatic Operations</h3>
+    <p>
+        <script>
+            // a. Declare a variable
+            var myVariable;
+
+            // b. Show the value of variable after declaration
+            document.write("Value after variable declaration is: " + myVariable + "<br>");
+
+            // c. Initialize the variable with some number
+            myVariable = 5;
+
+            // d. Show the initial value of the variable
+            document.write("Initial value: " + myVariable + "<br>");
+
+            // e. Increment the variable
+            myVariable++;
+
+            // f. Show the value after increment
+            document.write("Value after increment is: " + myVariable + "<br>");
+
+            // g. Add 7 to the variable
+            myVariable += 7;
+
+            // h. Show the value after addition
+            document.write("Value after addition is: " + myVariable + "<br>");
+
+            // i. Decrement the variable
+            myVariable--;
+
+            // j. Show the value after decrement
+            document.write("Value after decrement is: " + myVariable + "<br>");
+
+            // k. Show the remainder after dividing by 3
+            var remainder = myVariable % 3;
+
+            // l. Output the remainder
+            document.write("The remainder is: " + remainder + "<br>");
+        </script>
+    </p>
+
+    <h3>Question 4 - Ticket Price</h3>
+    <p>
+        <script>
+            var ticketPrice = 600;
+            document.write("Total cost to buy 5 tickets to a movie is <b>" + ticketPrice * 5 + "PKR</b>");
+        </script>
+    </p>
+
+    <h3>Question 5 - Table of 6</h3>
+    <p>
+        <script>
+            var tableNumber = 6;
+            document.write("4 x 1 = " + tableNumber * 1);
+            document.write("<br/>4 x 2 = " + tableNumber * 2);
+            document.write("<br/>4 x 3 = " + tableNumber * 3);
+            document.write("<br/>4 x 4 = " + tableNumber * 4);
+            document.write("<br/>4 x 5 = " + tableNumber * 5);
+            document.write("<br/>4 x 6 = " + tableNumber * 6);
+            document.write("<br/>4 x 7 = " + tableNumber * 7);
+            document.write("<br/>4 x 8 = " + tableNumber * 8);
+            document.write("<br/>4 x 9 = " + tableNumber * 9);
+            document.write("<br/>4 x 10 = " + tableNumber * 10);
+        </script>
+    </p>
+
+    <h3>Question 6 - Temperature Conversion Degree Centigrade to Fahrenhiet</h3>
+    <p>
+        <script>
+            var degreeC = 32;
+            var degreeF = (degreeC * 9 / 5) + 32;
+            document.write(degreeC + "<sup>&deg;</sup>C is " + degreeF + "<sup>&deg;</sup>F <br/>");
+            degreeF = 95;
+            degreeC = (degreeF - 32) * 5 / 9;
+            document.write(degreeF + "<sup>&deg;</sup>F is " + degreeC + "<sup>&deg;</sup>C")
+        </script>
+    </p>
+
+    <h3>Question 7 - Shopping Cart</h3>
+    <p>
+        <script>
+            var priceItem1 = 600;
+            var priceItem2 = 450;
+            var qtyItem1 = 3;
+            var qtyItem2 = 6;
+            var shipping = 150;
+            var totalCost = (priceItem1 * qtyItem1) + (priceItem2 * qtyItem2) + shipping;
+
+            document.write("Price of item1 is " + priceItem1 + "<br/>");
+            document.write("Quantity of item1 is " + qtyItem1 + "<br/>");
+            document.write("Price of item2 is " + priceItem2 + "<br/>");
+            document.write("Quantity of item2 is " + qtyItem2 + "<br/>");
+            document.write("Shipping Charges " + shipping + "<br/><br/>");
+            document.write("Total cost of your order is " + totalCost + "PKR");
+        </script>
+    </p>
+
+    <h3>Question 8 - Marks Sheet</h3>
+    <p>
+        <script>
+            var totalMarks = 650;
+            var obtMarks = 525;
+            var stuPercentage = (obtMarks / totalMarks) * 100;
+
+            document.write("Total Marks: " + totalMarks + "<br/>");
+            document.write("Marks Obtained: " + obtMarks + "<br/>");
+            document.write("Pcentage: " + stuPercentage + "%");
+        </script>
+    </p>
+
+    <h3>Question 9 - Currency in PKR</h3>
+    <p>
+        <script>
+            var usdCur = 10;
+            var saudiCur = 25;
+            var pkrConversion = (usdCur * 278.53) + (saudiCur * 74.23);
+
+            document.write("US Dollars: " + usdCur + "<br/>");
+            document.write("Saudi Riyal: " + saudiCur + "<br/>");
+            document.write("Total currency in PKR is " + pkrConversion);
+        </script>
+    </p>
+
+    <h3>Question 10 - Calculations in Single Expression</h3>
+    <p>
+        <script>
+            var myNum = 20;
+            var calculateNum = ((myNum + 5) * 10) / 2;
+
+            document.write("If the variable is " + myNum + "<br/>");
+            document.write("After all the calculations the result is " + calculateNum);
+        </script>
+    </p>
+
+    <h3>Question 11 - Age Calculator</h3>
+    <p>
+        <script>
+            var curYear = new Date().getFullYear();
+            var birthYear = 1998;
+            var calAge = curYear - birthYear;
+
+            document.write("Current Year: " + curYear + "<br/>");
+            document.write("Birth Year: " + birthYear + "<br/>");
+            document.write("Your Age is: " + calAge);
+        </script>
+    </p>
+
+    <h3>Question 12 - The Geometrizer</h3>
+    <p>
+        <script>
+            var circleRad = 30;
+            const pi = 3.142;
+            var circumference = 2 * pi * circleRad;
+            var area = pi * (circleRad ** 2);
+
+            document.write("Radius of a circle: " + circleRad + "<br/>");
+            document.write("The circumference is: " + circumference + "<br/>");
+            document.write("The area is: " + area);
+        </script>
+    </p>
+
+    <h3>Question 13 - The Lifetime Supply Calculator</h3>
+    <p>
+        <script>
+            var favSnack = "Kurleez";
+            var curAge = 26;
+            var maxAge = 65;
+            var conPerDay = 2;
+            var conLifetime = ((maxAge - curAge) * 365) * conPerDay;
+
+            document.write("Favorite Snack: " + favSnack + "<br/>");
+            document.write("Current Age: " + curAge + "<br/>");
+            document.write("Estimated Maximum Age: " + maxAge + "<br/>");
+            document.write("Amount of Snacks Per Day: " + conPerDay + "<br/><br/>");
+            document.write("You will need <b>" + conLifetime + " " + favSnack + "</b> to last you until the ripe old age of " + maxAge + ".");
+        </script>
+    </p>
+
+    <h2>CHAPTER 06 to 09 - MATHS EXPRESSIONS</h2>
+
+    <h3>Question 1 - Take Variable & Perform Arithmatic Calculations on it</h3>
+    <p>
+        <script>
+            var userNum = parseInt(prompt("Enter a number between 0 to 99 for performing an arithmatic operation on it", 20));
+
+            document.write("Result: <br/>");
+            document.write("The value you input of variable a is: " + userNum + "<br/>");
+            document.write("_________________________________________________________<br/><br/>");
+
+            document.write("The value of ++a is: " + ++userNum + "<br/>");
+            document.write("Now the value of a is: " + userNum + "<br/><br/>");
+
+            document.write("The value of a++ is: " + userNum++ + "<br/>");
+            document.write("Now the value of a is: " + userNum + "<br/><br/>");
+
+            document.write("The value of --a is: " + --userNum + "<br/>");
+            document.write("Now the value of a is: " + userNum + "<br/><br/>");
+
+            document.write("The value of a-- is: " + userNum-- + "<br/>");
+            document.write("Now the value of a is: " + userNum);
+        </script>
+    </p>
+
+    <h3>Question 2 - Display Result Output at Each Stage</h3>
+    <p>
+        <script>
+            var a = 2, b = 1;
+            var result = --a - --b + ++b + b--;
+
+            document.write("a is: " + a + "<br>");
+            document.write("b is: " + b + "<br>");
+            document.write("result is: " + result + "<br>");
+        </script>
+    </p>
+
+    <h3>Question 3 - Greet User by his Name</h3>
+    <p>
+        <script>
+            var userName = prompt("Please enter your name:", "Ali");
+
+            document.write("Welcome " + userName + "!");
+        </script>
+    </p>
+
+    <h3>Question 5 - Multiplication Table by User Value</h3>
+    <p>
+        <script>
+            var userTable = prompt("Enter a number for Table (0 - 99):", 5);
+
+            document.write("<b>Multiplication table of " + userTable + "</b><br><br>");
+            document.write(userTable + " x 1 = " + (userTable * 1) + "<br>");
+            document.write(userTable + " x 2 = " + (userTable * 2) + "<br>");
+            document.write(userTable + " x 3 = " + (userTable * 3) + "<br>");
+            document.write(userTable + " x 4 = " + (userTable * 4) + "<br>");
+            document.write(userTable + " x 5 = " + (userTable * 5) + "<br>");
+            document.write(userTable + " x 6 = " + (userTable * 6) + "<br>");
+            document.write(userTable + " x 7 = " + (userTable * 7) + "<br>");
+            document.write(userTable + " x 8 = " + (userTable * 8) + "<br>");
+            document.write(userTable + " x 9 = " + (userTable * 9) + "<br>");
+            document.write(userTable + " x 10 = " + (userTable * 10));
+        </script>
+    </p>
+
+    <h3>Question 6 - Student Mark Sheet</h3>
+    <p>
+        <script>
+            var subject1 = prompt("Enter the first subject name:", "English");
+            var subject2 = prompt("Enter the second subject name:", "Maths");
+            var subject3 = prompt("Enter the third subject name:", "Chemistry");
+
+            var totalMarks = 100;
+
+            var obtainedMarks1 = parseInt(prompt("Enter obtained marks for " + subject1 + ":", 78));
+            var obtainedMarks2 = parseInt(prompt("Enter obtained marks for " + subject2 + ":", 82));
+            var obtainedMarks3 = parseInt(prompt("Enter obtained marks for " + subject3 + ":", 65));
+
+            var totalObtainedMarks = obtainedMarks1 + obtainedMarks2 + obtainedMarks3;
+            var totalPercentage = (totalObtainedMarks / (totalMarks * 3)) * 100;
+
+            document.write("<table border=1>");
+            document.write("<tr><th>Subject</th> <th>Total Marks</th> <th>Obtained Marks</th> <th>Percentage</th></tr >");
+            document.write("<tr><td>" + subject1 + "</td> <td>" + totalMarks + "</td> <td>" + obtainedMarks1 + "</td> <td>" + obtainedMarks1 + "</td></tr>");
+            document.write("<tr><td>" + subject2 + "</td> <td>" + totalMarks + "</td> <td>" + obtainedMarks2 + "</td> <td>" + obtainedMarks2 + "</td></tr>");
+            document.write("<tr><td>" + subject3 + "</td> <td>" + totalMarks + "</td> <td>" + obtainedMarks3 + "</td> <td>" + obtainedMarks3 + "</td></tr>");
+            document.write("<tr><td><b>Total</b></td> <td><b>" + (totalMarks * 3) + "</b></td> <td><b>" + totalObtainedMarks + "</b></td> <td><b>" + totalPercentage + "%</b></td></tr>");
+            document.write("</table>");
+        </script>
+    </p>
+</body>
+
+</html>
