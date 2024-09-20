@@ -49,7 +49,7 @@ function showEmail() {
 }
 
 function showBook() {
-    var book = "mjunaidkhan996@outlook.com";
+    var book = "A Smarter Way to Learn JavaScript";
     alert("I'm trying to learn from the book " + book);
 }
 
