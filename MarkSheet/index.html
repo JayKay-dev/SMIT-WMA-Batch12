@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+
+    <script src="main.js"></script>
+
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        #wrapper {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #marksheet-container {
+            width: 450px;
+            margin: 0 auto;
+            padding: 15px 30px 50px;
+            background-color: #ffffff;
+            box-shadow: 2px 2px 4px #0000005e;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 2em;
+            margin-bottom: 40px;
+        }
+
+        p strong {
+            font-size: 20px;
+        }
+
+        a.btn {
+            background-color: antiquewhite;
+            border: 1px solid #000000;
+            color: #000000;
+            font-size: 16px;
+            padding: 12px 46px;
+            text-align: center;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="marksheet-container">
+            <h1>Mark Sheet</h1>
+            <p>
+                <script>
+                    document.write("<strong>Student Name: " + userName + "</strong><br/>");
+                    document.write("Total Marks: " + totalMarks + "<br/>");
+                    document.write("Marks Obtained: " + obtMarks + "<br/>");
+                    document.write("Percentage: " + percentage + "%<br/>");
+                    document.write("Grade: " + grade + "<br/>");
+                    document.write("Remarks: " + remarks);
+                </script>
+            </p>
+            <a class="btn" onclick="location.reload()">New</a>
+        </div>
+    </div>
+</body>
+
+</html>
